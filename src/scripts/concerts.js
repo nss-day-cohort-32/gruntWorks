@@ -48,6 +48,7 @@ function getConcerts(results) {
         let venue = results._embedded.events[i]._embedded.venues[0].name;
         console.log(`Artist: ${artist}`);
         console.log(`Venue: ${venue}`);
+        renderSearchResults(artist, venue);
 
     }
 }
