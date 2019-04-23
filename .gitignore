@@ -1,2 +1,4 @@
 src/lib/node_modules
-.DS_store
+.DS_Store
+
+src/scripts/burakKey.js
