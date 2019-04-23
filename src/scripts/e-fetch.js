@@ -12,6 +12,7 @@ searchButton.addEventListener("click", () => {
     .then(results => {
       if (results.top_match_events === undefined) {
         alert("Sorry! No results, try again!");
+        searchItem.value = "";
         searchItem.focus();
       } else {
         for (let i = 0; i < 5; i++) {
