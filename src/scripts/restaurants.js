@@ -10,6 +10,10 @@ let restaurantInput = document.querySelector("#restaurants-search-input");
 
 restaurantsSearchBtn.addEventListener("click", e => {
   var takeRestValue = restaurantInput.value;
+  restaurantInput.value = "";
+  renderSearchResultsHere.innerHTML = "";
+  // EVERYONE NEEDS THIS IN THEIR FUNCTION
+  createResultsHeader();
   fetch(
     `https://developers.zomato.com/api/v2.1/search?entity_id=1138&entity_type=city&start=first&sort=rating&q=${takeRestValue}`,
     {
@@ -21,13 +25,7 @@ restaurantsSearchBtn.addEventListener("click", e => {
   )
     .then(entries => entries.json())
     .then(results => {
-      // create search results header
-      const renderSearchResultsHere = document.querySelector(
-        "#search-results-container"
-      );
-      const resultsHeader = document.createElement("h3");
-      resultsHeader.textContent = "Search Results";
-      renderSearchResultsHere.appendChild(resultsHeader);
+      // createResultsHeader();
       // loop through results and print to DOM
       for (var i = 0; i < 5; i++) {
         console.log(results.restaurants[i].restaurant.name);
