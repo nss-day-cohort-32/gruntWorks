@@ -27,5 +27,8 @@ function renderSearchResults(name, address) {
   renderSearchResultsHere.appendChild(btnResults);
   renderSearchResultsHere.appendChild(p);
 
-  btnResults.addEventListener("click", e => { });
+  btnResults.addEventListener("click", e => {
+    let selectedItem = e.target.parentNode;
+    render;
+  });
 }
