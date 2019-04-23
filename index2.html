@@ -1,16 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Nashvegas Itinerary</title>
-    <link rel="stylesheet" href="style.css" />
-  </head>
 
-  <body>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>Nashvegas Itinerary</title>
+  <link rel="stylesheet" href="src/styles/main.css" />
+</head>
+
+<body>
+
+  <div class="body-container">
     <h1 class="mainH1">Find your activities</h1>
-
     <article class="searchBoxes-container">
       <div id="parks-container">
         <button id="parks-button" class="searchButtons">Search</button>
@@ -32,15 +34,16 @@
         <input type="text" id="concerts-search-input" class="searchBoxes" />
       </div>
     </article>
+  </div>
 
+  <aside>
     <div id="itinerary-container">
       <h3 id="results-title">Your Itinerary:</h3>
       <section id="itinerary-locaysh"></section>
     </div>
-    <!-- <scripts src=""></scripts>
-    <scripts src=""></scripts>
-    <scripts src=""></scripts>
-    <scripts src=""></scripts>
-    <scripts src=""></scripts> -->
-  </body>
+  </aside>
+  <script src="src/scripts/functions.js"></script>
+  <script src="src/scripts/e-fetch.js"></script>
+</body>
+
 </html>

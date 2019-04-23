@@ -1,11 +1,17 @@
 const searchItem = "tech";
-const token = "2S2M6RAC5OSTZR7PQSQJ";
+const eliotKey = "2S2M6RAC5OSTZR7PQSQJ";
 
-fetch(`https://www.eventbriteapi.com/v3/events/search/?q=${searchItem}& location.address=nashville & token=${token}`), {
+fetch(`https://www.eventbriteapi.com/v3/events/search/?q=${searchItem}&location.address=nashville&start_date.keyword=today&expand=venue`, {
   "headers": {
     "Accept": "application/json",
-    "authorizations": `Bearer ${token}`
+    "Authorization": `Bearer ${eliotKey}`
   }
-}
+})
   .then(data => data.json())
-  .then(results => { console.log(results) })
+  .then(results => {
+    for (let i = 0; i < 5; i++) {
+      let eventName = results.top_match_events[i].name.text;
+      let eventAddress = results.top_match_events[i].venue.address.address_1;
+      // renderSearchResults(eventName, eventAddress);
+    }
+  })
