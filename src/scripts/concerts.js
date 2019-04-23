@@ -1,5 +1,4 @@
 console.log('concerts.js');
-const ticketmasterKey = 'tKKZAbqeNvWoAVRFDtjHyedZvk0scnGD';
 const concertInput = document.querySelector('#concerts-search-input');
 const concertBtn = document.querySelector('#concerts-button');
 let genre_Id;
