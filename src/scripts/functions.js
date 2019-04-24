@@ -65,7 +65,7 @@ function renderSearchResults(name, address, category) {
   let categoryIs = category;
   btnResults.textContent = "Save";
   const p = document.createElement("p");
-  p.textContent = `${name}: ${address}`;
+  p.innerHTML = `<h4>${name}:</h4> <br> ${address}`;
 
   renderSearchResultsHere.appendChild(makeDiv);
   makeDiv.appendChild(btnResults);
