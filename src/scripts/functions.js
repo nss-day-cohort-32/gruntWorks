@@ -1,5 +1,5 @@
 /*
-creates results header 
+creates results header
 */
 
 function createResultsHeader() {
@@ -12,7 +12,7 @@ function createResultsHeader() {
   renderSearchResultsHere.appendChild(resultsHeader);
 }
 
-/* 
+/*
 Function to render the Intinerary Items to the DOM params to pass in: category, & description
 */
 function renderItinerary(item) {
@@ -22,7 +22,7 @@ function renderItinerary(item) {
   renderItineraryHere.appendChild(p);
 }
 
-/* 
+/*
 Function to render the resuls to the DOM params to pass in: name & address or venue name
 */
 const renderSearchResultsHere = document.querySelector(

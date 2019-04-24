@@ -1,0 +1,8 @@
+.body-container {
+  display: inline-block;
+}
+
+aside {
+  float: right;
+  text-align: left;
+}
