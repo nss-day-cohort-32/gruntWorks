@@ -1,56 +1,84 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Nashvegas Itinerary</title>
+    <!-- <link rel="stylesheet" href="style.css" /> -->
+    <link rel="stylesheet" href="src/styles/main.css" />
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-  <title>Nashvegas Itinerary</title>
-  <!-- <link rel="stylesheet" href="style.css" /> -->
-  <link rel="stylesheet" href="src/styles/main.css" />
-</head>
+  <body>
+    <div class="body-container">
+      <h1 class="mainH1">Find your activities</h1>
+      <article class="searchBoxes-container">
+        <div id="parks-container">
+          <button id="parks-button" class="searchButtons">Search</button>
+          <input
+            type="text"
+            id="parks-search-input"
+            class="searchBoxes"
+            placeholder="parks by feature"
+          />
+        </div>
 
-<body>
+        <div id="restaurants-container">
+          <button id="restaurants-button" class="searchButtons">Search</button>
+          <input
+            type="text"
+            id="restaurants-search-input"
+            class="searchBoxes"
+            placeholder="restaurants by food type"
+          />
+        </div>
 
-  <div class="body-container">
-    <h1 class="mainH1">Find your activities</h1>
-    <article class="searchBoxes-container">
-      <div id="parks-container">
-        <button id="parks-button" class="searchButtons">Search</button>
-        <input type="text" id="parks-search-input" class="searchBoxes" placeholder="parks by feature" />
-      </div>
+        <div id="meetups-container">
+          <button id="meetups-button" class="searchButtons">Search</button>
+          <input
+            type="text"
+            id="meetups-search-input"
+            class="searchBoxes"
+            placeholder="meet-ups by topic"
+          />
+        </div>
 
-      <div id="restaurants-container">
-        <button id="restaurants-button" class="searchButtons">Search</button>
-        <input type="text" id="restaurants-search-input" class="searchBoxes" placeholder="restaurants by food type" />
-      </div>
-
-      <div id="meetups-container">
-        <button id="meetups-button" class="searchButtons">Search</button>
-        <input type="text" id="meetups-search-input" class="searchBoxes" placeholder="meet-ups by topic" />
-      </div>
-
-      <div id="concerts-container">
-        <button id="concerts-button" class="searchButtons">Search</button>
-        <input type="text" id="concerts-search-input" class="searchBoxes" placeholder="concerts by genre" />
-      </div>
-    </article>
-    <section id="search-results-container"></section>
-  </div>
-
-  <aside>
-    <div id="itinerary-container">
-      <h3 id="results-title">Your Itinerary:</h3>
-      <section id="itinerary-locaysh"></section>
+        <div id="concerts-container">
+          <button id="concerts-button" class="searchButtons">Search</button>
+          <input
+            type="text"
+            id="concerts-search-input"
+            class="searchBoxes"
+            placeholder="concerts by genre"
+          />
+        </div>
+      </article>
+      <section id="search-results-container"></section>
     </div>
-  </aside>
 
-  <script src="src/scripts/functions.js"></script>
-  <script src="src/scripts/e-fetch.js"></script>
-  <script src="src/scripts/restaurants.js"></script>
-  <script src="src/scripts/concerts.js"></script>
-  <script src="src/scripts/apiKeys.js"></script>
-  <script src="src/scripts/parks.js"></script>
-</body>
+    <aside>
+      <div id="itinerary-container">
+        <h2 id="results-title">Your Itinerary:</h2>
+        <div id="parks">
+          <h3>Parks:</h3>
+        </div>
+        <div id="restaurants">
+          <h3>Restaurants:</h3>
+        </div>
+        <div id="meetups">
+          <h3>Meetups:</h3>
+        </div>
+        <div id="concerts">
+          <h3>Concerts:</h3>
+        </div>
+      </div>
+    </aside>
 
+    <script src="src/scripts/functions.js"></script>
+    <script src="src/scripts/e-fetch.js"></script>
+    <script src="src/scripts/restaurants.js"></script>
+    <script src="src/scripts/concerts.js"></script>
+    <script src="src/scripts/apiKeys.js"></script>
+    <script src="src/scripts/parks.js"></script>
+  </body>
 </html>

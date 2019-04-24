@@ -14,6 +14,9 @@ restaurantsSearchBtn.addEventListener("click", e => {
   renderSearchResultsHere.innerHTML = "";
   // EVERYONE NEEDS THIS IN THEIR FUNCTION
   createResultsHeader();
+  const makeCategory = document.createElement("h4");
+  makeCategory.textContent = "Restaurants";
+  renderSearchResultsHere.appendChild(makeCategory);
   fetch(
     `https://developers.zomato.com/api/v2.1/search?entity_id=1138&entity_type=city&start=first&sort=rating&q=${takeRestValue}`,
     {
@@ -32,7 +35,7 @@ restaurantsSearchBtn.addEventListener("click", e => {
         console.log(results.restaurants[i].restaurant.location.address);
         let restName = results.restaurants[i].restaurant.name;
         let restLoc = results.restaurants[i].restaurant.location.address;
-        renderSearchResults(restName, restLoc);
+        renderSearchResults(restName, restLoc, "restaurants");
       }
     });
 });
