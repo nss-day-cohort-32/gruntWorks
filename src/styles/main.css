@@ -1,8 +1,53 @@
+html {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+}
+
+.head-container {
+  background: #FFF9F8;
+  width: 100%;
+  border: 1px solid transparent;
+  box-shadow: 10px 10px 25px #142a4c;
+  border-bottom-left-radius: .1rem;
+  border-bottom-right-radius: .1rem;
+  display: block;
+  top: 0;
+}
+
+.head-img {
+  width: 9rem;
+  height: auto;
+}
+
+.welcome {
+  float: right;
+  margin-top: 3.5rem;
+  margin-right: 1rem;
+  color: #ebad35;
+}
+
 .body-container {
   display: inline-block;
+  padding: 1rem;
 }
 
 aside {
-  float: right;
+  display: inline-block;
+  position: fixed;
+  right: 0;
+  margin-right: 15rem;
+  width: 15rem;
   text-align: left;
+  word-wrap: normal;
+}
+
+.itinerary-container {
+  position: fixed;
+  display: block;
+  border-left: 1px solid #142a4c;
 }
