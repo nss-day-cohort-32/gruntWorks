@@ -1,3 +1,22 @@
+body {
+  font-family: 'Poppins', sans-serif;
+}
+
+.head-container {
+  background: #FFF9F8;
+  width: 100%;
+  top: 0;
+  border: 1px solid transparent;
+  box-shadow: 10px 10px 25px #142a4c;
+  border-bottom-left-radius: .1rem;
+  border-bottom-right-radius: .1rem;
+}
+
+.head-img {
+  width: 9rem;
+  height: auto;
+}
+
 .body-container {
   display: inline-block;
 }
