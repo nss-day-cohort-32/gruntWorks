@@ -54,8 +54,6 @@ function getConcerts(results) {
 
 // renderResults params: name, address / artist address (or venue)
 
-
-
 // renderItinerary params: category, description / concerts, string
 
 // Artist name, Venue name path:
