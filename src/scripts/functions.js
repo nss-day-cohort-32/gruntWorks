@@ -5,6 +5,7 @@ let parksItineraryArea = document.querySelector("#parks");
 let restaurantsItineraryArea = document.querySelector("#restaurants");
 let meetupsItineraryArea = document.querySelector("#meetups");
 let concertsItineraryArea = document.querySelector("#concerts");
+const saveItineraryBtn = document.querySelector("#save-itinerary-btn");
 
 function createResultsHeader() {
   // create search results header
@@ -64,15 +65,39 @@ function renderSearchResults(name, address, category) {
   const btnResults = document.createElement("button");
   let categoryIs = category;
   btnResults.textContent = "Save";
+  const h5 = document.createElement("h5");
+  h5.innerHTML = name;
   const p = document.createElement("p");
-  p.innerHTML = `<h4>${name}:</h4> <br> ${address}`;
+  p.textContent = address;
 
   renderSearchResultsHere.appendChild(makeDiv);
   makeDiv.appendChild(btnResults);
+  makeDiv.appendChild(h5);
   makeDiv.appendChild(p);
 
   btnResults.addEventListener("click", e => {
     let selectedItem = e.target.nextSibling.textContent;
+    selectedItem += ": " + e.target.nextSibling.nextElementSibling.textContent;
     renderItinerary(selectedItem, categoryIs);
   });
 }
+
+saveItineraryBtn.addEventListener("click", e => {
+  const parkValue = document.querySelector("#parks").firstElementChild
+    .nextSibling.textContent;
+  const restaurantValue = document.querySelector("#restaurants")
+    .firstElementChild.nextSibling.textContent;
+  const meetupValue = document.querySelector("#meetups").firstElementChild
+    .nextSibling.textContent;
+  const concertValue = document.querySelector("#concerts").firstElementChild
+    .nextSibling.textContent;
+
+  let itineraryObj = {
+    park: parkValue,
+    restaurant: restaurantValue,
+    meetup: meetupValue,
+    concert: concertValue
+  };
+  console.log(parkValue);
+});
+function addItineraryToJson() {}
