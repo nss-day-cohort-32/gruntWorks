@@ -1,6 +1,6 @@
-/* 
+/*
 
-Colin's functions for the Restaurant Category 
+Colin's functions for the Restaurant Category
 
 */
 console.log("mic check 1-2 1-2");
