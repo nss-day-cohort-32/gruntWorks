@@ -82,22 +82,22 @@ function renderSearchResults(name, address, category) {
   });
 }
 
-saveItineraryBtn.addEventListener("click", e => {
-  const parkValue = document.querySelector("#parks").firstElementChild
-    .nextSibling.textContent;
-  const restaurantValue = document.querySelector("#restaurants")
-    .firstElementChild.nextSibling.textContent;
-  const meetupValue = document.querySelector("#meetups").firstElementChild
-    .nextSibling.textContent;
-  const concertValue = document.querySelector("#concerts").firstElementChild
-    .nextSibling.textContent;
+// saveItineraryBtn.addEventListener("click", e => {
+//   const parkValue = document.querySelector("#parks").firstElementChild
+//     .nextSibling.textContent;
+//   const restaurantValue = document.querySelector("#restaurants")
+//     .firstElementChild.nextSibling.textContent;
+//   const meetupValue = document.querySelector("#meetups").firstElementChild
+//     .nextSibling.textContent;
+//   const concertValue = document.querySelector("#concerts").firstElementChild
+//     .nextSibling.textContent;
 
-  let itineraryObj = {
-    park: parkValue,
-    restaurant: restaurantValue,
-    meetup: meetupValue,
-    concert: concertValue
-  };
-  console.log(parkValue);
-});
-function addItineraryToJson() {}
+//   let itineraryObj = {
+//     park: parkValue,
+//     restaurant: restaurantValue,
+//     meetup: meetupValue,
+//     concert: concertValue
+//   };
+//   console.log(parkValue);
+// });
+// function addItineraryToJson() {}

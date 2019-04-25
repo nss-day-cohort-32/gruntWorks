@@ -6,6 +6,10 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Nashvegas Itinerary</title>
     <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i"
+      rel="stylesheet"
+    />
+    <link
       href="https://fonts.googleapis.com/css?family=Poppins"
       rel="stylesheet"
     />
@@ -13,76 +17,83 @@
   </head>
 
   <body>
-    <header>
+    <!-- <header>
       <div class="head-container">
-        <img class="head-img" src="NASHVILLE-01.png" />
         <h1 class="welcome">WELCOME TO NASHVILLE, Y'ALL!</h1>
       </div>
-    </header>
+    </header> -->
 
-    <div class="body-container">
-      <h1 class="mainH1">Find your activities</h1>
-      <article class="searchBoxes-container">
-        <div id="parks-container">
-          <button id="parks-button" class="searchButtons">Search</button>
-          <input
-            type="text"
-            id="parks-search-input"
-            class="searchBoxes"
-            placeholder="parks by feature"
-          />
-        </div>
+    <div class="main-wrapper">
+      <div class="body-container">
+        <img class="head-img" src="NASHVILLE-01.png" />
+        <h1 class="mainH1">
+          "Hey y'all! its Kelly Pickler.
+        </h1>
+        <h2>Start by searching below..."</h2>
+        <article class="searchBoxes-container">
+          <div id="parks-container">
+            <button id="parks-button" class="searchButtons">Search</button>
+            <input
+              type="text"
+              id="parks-search-input"
+              class="searchBoxes"
+              placeholder="parks by feature"
+            />
+          </div>
 
-        <div id="restaurants-container">
-          <button id="restaurants-button" class="searchButtons">Search</button>
-          <input
-            type="text"
-            id="restaurants-search-input"
-            class="searchBoxes"
-            placeholder="restaurants by food type"
-          />
-        </div>
+          <div id="restaurants-container">
+            <button id="restaurants-button" class="searchButtons">
+              Search
+            </button>
+            <input
+              type="text"
+              id="restaurants-search-input"
+              class="searchBoxes"
+              placeholder="restaurants by food type"
+            />
+          </div>
 
-        <div id="meetups-container">
-          <button id="meetups-button" class="searchButtons">Search</button>
-          <input
-            type="text"
-            id="meetups-search-input"
-            class="searchBoxes"
-            placeholder="meet-ups by topic"
-          />
-        </div>
+          <div id="meetups-container">
+            <button id="meetups-button" class="searchButtons">Search</button>
+            <input
+              type="text"
+              id="meetups-search-input"
+              class="searchBoxes"
+              placeholder="meet-ups by topic"
+            />
+          </div>
 
-        <div id="concerts-container">
-          <button id="concerts-button" class="searchButtons">Search</button>
-          <input
-            type="text"
-            id="concerts-search-input"
-            class="searchBoxes"
-            placeholder="concerts by genre"
-          />
-        </div>
-      </article>
-      <section id="search-results-container"></section>
-    </div>
-
-    <aside>
-      <div id="itinerary-container">
-        <h2 id="results-title">Your Itinerary:</h2>
-        <div id="parks">
-          <h3>Parks:</h3>
-        </div>
-        <div id="restaurants">
-          <h3>Restaurants:</h3>
-        </div>
-        <div id="meetups">
-          <h3>Meetups:</h3>
-        </div>
-        <div id="concerts">
-          <h3>Concerts:</h3>
-        </div>
+          <div id="concerts-container">
+            <button id="concerts-button" class="searchButtons">Search</button>
+            <input
+              type="text"
+              id="concerts-search-input"
+              class="searchBoxes"
+              placeholder="concerts by genre"
+            />
+          </div>
+        </article>
+        <section id="search-results-container"></section>
       </div>
-    </aside>
+
+      <aside>
+        <div id="itinerary-container">
+          <h2 id="results-title">Your Itinerary:</h2>
+          <div id="parks">
+            <h3>Parks:</h3>
+          </div>
+          <div id="restaurants">
+            <h3>Restaurants:</h3>
+          </div>
+          <div id="meetups">
+            <h3>Meetups:</h3>
+          </div>
+          <div id="concerts">
+            <h3>Concerts:</h3>
+          </div>
+        </div>
+      </aside>
+    </div>
 
     <script src="src/scripts/functions.js"></script>
     <script src="src/scripts/e-fetch.js"></script>
