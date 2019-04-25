@@ -1,5 +1,6 @@
 # My Nashville Itinerary!
 
+![alt text](https://github.com/nss-day-cohort-32/gruntWorks/blob/master/NASHVILLE-01.png?raw=true)
 
 ###### You've found the gruntWorks "Welcome to Nashville" app a.k.a. My Nashville Itinerary. This is an app that utilizes several APIs to let you build an itinerary while you're visiting Nashville. Here's your steps for building your own good times:
 
