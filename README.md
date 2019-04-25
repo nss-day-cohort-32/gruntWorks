@@ -9,6 +9,8 @@
   - Each of your results will have a save button which you can use to place that event or place into your itinerary
   - If you'd like to replace any item, all you have to do is create another set of seach results in that category and select your new destination
   - Then the only thing left to do is HAVE FUN!
+  
+  ![alt text](https://media.giphy.com/media/1O3ogGQPc2oZGjlWp6/giphy.gif)
 
 # Follow the Steps Below to Download and Use Our App
 
