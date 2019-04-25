@@ -3,6 +3,8 @@ console.log("ParkList");
 const parksSearchBtn = document.querySelector("#parks-button");
 let parksInput = document.querySelector("#parks-search-input");
 
+// 1- Search and print from Fetch
+
 parksSearchBtn.addEventListener("click", e => {
   var takeParksValue = parksInput.value;
   parksInput.value = "";
@@ -23,6 +25,13 @@ parksSearchBtn.addEventListener("click", e => {
   )
     .then(entries => entries.json())
     .then(results => {
+      //If no results
+      if (results <= 0) {
+        const NoResult = document.createElement("h2");
+        NoResult.textContent = "No Results Found";
+        renderSearchResultsHere.appendChild(NoResult);
+       } 
+      else {
       for (var i = 0; i < 5; i++) {
         if (results[i] === undefined) {
           continue;
@@ -33,5 +42,15 @@ parksSearchBtn.addEventListener("click", e => {
         console.log(parkLoc);
         renderSearchResults(parkName, parkLoc, "parks");
       }
-    });
+    }});
 });
+
+//Enter keyboard function
+
+parksInput.addEventListener("keyup", function(event) {
+  if (event.keyCode === 13) {
+   event.preventDefault();
+   parksSearchBtn.click();
+  }
+});
+
